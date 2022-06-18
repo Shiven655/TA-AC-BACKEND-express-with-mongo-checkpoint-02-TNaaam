@@ -1,0 +1,48 @@
+.update {
+  background-color: rgb(51, 180, 100);
+}
+
+.update:hover {
+  background-color: greenyellow;
+}
+
+.delete {
+  background-color: red;
+}
+
+.delete:hover {
+  background-color: orangered;
+}
+.like {
+  background-color: navy;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.like:hover {
+  background-color: rgb(84, 84, 153);
+}
+.space {
+  padding: 2rem;
+}
+.txt-center {
+  text-align: center;
+}
+.space {
+  background-color: rgb(146, 91, 91);
+  border: 2px solid black;
+  box-shadow: 3px 6px 12px purple;
+  color: white;
+  h2 {
+    font-weight: 700;
+    font-size: 2.4rem;
+  }
+  h4 {
+    font-size: 1.4rem;
+    margin: 0.8rem 0;
+  }
+  p {
+    font-size: 1rem;
+    margin: 0.8rem 0;
+  }
+}

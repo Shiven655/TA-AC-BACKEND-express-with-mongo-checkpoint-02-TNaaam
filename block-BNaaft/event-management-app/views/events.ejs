@@ -1,0 +1,18 @@
+<% include partials/header %>
+<div>
+  <div>
+    <h3>List of Events</h3>
+    <% events.forEach(event => { %>
+    <section class="event">
+      <h2><%= event.title %></h2>
+      <div>
+        <p><%= event.summary.substr(0, 80) + "..." %></p>
+        <a href="/events/<%= event._id %>">
+          <button class="btn">Show</button>
+        </a>
+      </div>
+    </section>
+    <% }) %>
+  </div>
+</div>
+<% include partials/footer %>
