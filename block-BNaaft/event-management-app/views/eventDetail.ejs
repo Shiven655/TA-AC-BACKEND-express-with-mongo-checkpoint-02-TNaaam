@@ -1,0 +1,27 @@
+<% include partials/header %>
+<div class="container space">
+  <div>
+    <h2 class="txt-center"><%= event.title %></h2>
+    <h4 class="txt-center">Summary: <%= event.summary %></h4>
+    <p>Host: <%= event.host %></p>
+    <p>Start: <%= event.start_date %></p>
+    <p>End: <%= event.end_date %></p>
+    <p>Event Category: <%= event.category %></p>
+    <p>Location: <%= event.location %></p>
+    <div class="flex">
+      <p>Likes: <%= event.likes %></p>
+      <a href="/events/<%= event.id %>/inc">
+        <button class="like">Likes</button>
+      </a>
+    </div>
+  </div>
+  <div class="txt-center">
+    <a href="/events/<%= event.id %>/edit">
+      <button class="update">Update</button>
+    </a>
+    <a href="/events/<%= event.id %>/delete">
+      <button class="delete">Delete</button>
+    </a>
+  </div>
+</div>
+<% include partials/footer %>
